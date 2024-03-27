@@ -30,23 +30,26 @@ function App() {
 
   return (
     <>
-      <div>
-        <h2>Name</h2>
-        {/* run our contact name list component with our contactData as an argument for the contacts prop */}
-        <ContactNameUnorderedList contacts={contactData} />
-      </div>
-      
-      <div>
-        <h2>Email</h2>
-        {/* run our contact email list component with our contactData as an argument for the contacts prop */}
-        <ContactEmailUnorderedList contacts={contactData} />
-      </div>
+      <h1>Prestigious Contacts</h1>
+      <section>
+        <div className="listDiv">
+          <h2>Name</h2>
+          {/* run our contact name list component with our contactData as an argument for the contacts prop */}
+          <ContactNameUnorderedList contacts={contactData} />
+        </div>
+        
+        <div className="listDiv">
+          <h2>Email</h2>
+          {/* run our contact email list component with our contactData as an argument for the contacts prop */}
+          <ContactEmailUnorderedList contacts={contactData} />
+        </div>
 
-      <div>
-        <h2>Phone</h2>
-        {/* run our contact phone number list component with our contactData as an argument for the contacts prop */}
-        <ContactPhoneUnorderedList contacts={contactData} />
-      </div>
+        <div className="listDiv">
+          <h2>Phone</h2>
+          {/* run our contact phone number list component with our contactData as an argument for the contacts prop */}
+          <ContactPhoneUnorderedList contacts={contactData} />
+        </div>
+      </section>
     </>
   )
 }
